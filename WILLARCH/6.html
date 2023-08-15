@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>Willarch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="index.html" />
+
+	
+<link rel='dns-prefetch' href='https://www.google.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<!-- This site uses the Google Analytics by ExactMetrics plugin v6.0.1 - Using Analytics tracking - https://www.exactmetrics.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var em_version         = '6.0.1';
+	var em_track_user      = true;
+	var em_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-146461243-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( em_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+window.ga = __gaTracker;		__gaTracker('create', 'UA-146461243-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+		__gaTracker( function() { window.ga = __gaTracker; } );
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + em_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+			window.ga = __gaTracker;		})();
+		}
+</script>
+<!-- / Google Analytics by ExactMetrics -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/gmcontractors.co.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.9"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+
+<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-consent-style-css'  href='wp-content/plugins/uk-cookie-consent/assets/css/style.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"zip,mp3,mpeg,pdf,docx,pptx,xlsx,rar","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/gmcontractors.co.uk","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/google-analytics-dashboard-for-wp/assets/js/frontend.min.js'></script>
+<link rel='https://api.w.org/' href='wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.9" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed@url=https%253A%252F%252Fgmcontractors.co.uk%252F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed@url=https%253A%252F%252Fgmcontractors.co.uk%252F&amp;format=xml" />
+<style id="ctcc-css" type="text/css" media="screen">
+				#catapult-cookie-bar {
+					box-sizing: border-box;
+					max-height: 0;
+					opacity: 0;
+					z-index: 99999;
+					overflow: hidden;
+					color: #ddd;
+					position: fixed;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					background-color: #0c1017;
+				}
+				#catapult-cookie-bar a {
+					color: #fff;
+				}
+				#catapult-cookie-bar .x_close span {
+					background-color: #ffffff;
+				}
+				button#catapultCookie {
+					background:orange;
+					color: #ffffff;
+					border: 0; padding: 6px 9px; border-radius: 3px;
+				}
+				#catapult-cookie-bar h3 {
+					color: #ddd;
+				}
+				.has-cookie-bar #catapult-cookie-bar {
+					opacity: 1;
+					max-height: 999px;
+					min-height: 30px;
+				}</style>
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+
+<!-- Foundation CSS -->
+<link rel="stylesheet" href="https://use.typekit.net/voq2uvn.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.6/venobox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css"/>
+<link href="wp-content/themes/gm_theme/style.css" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/18a78880d9.js"></script>
+    
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146461243-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146461243-1');
+</script>
+
+</head>
+
+<body class="home page-template page-template-front-page page-template-front-page-php page page-id-5">
+	
+<div class="animsition">
+	
+<header class="site-header">
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell">
+                <div class="header-inner">
+                    <a class="logo" href="index.html">
+						<img src="logo.png" >
+                        <div id="lottie"></div>
+                    </a>
+                    <button class="menu-trigger hide-for-large">
+                        <span class="burger-top"></span>
+                        <span class="burger-middle"></span>
+                        <span class="burger-bottom"></span>
+                    </button>
+
+                    <nav class="show-for-large">
+	                    <ul id="menu-primary-menu" class="">
+							<li id="menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-308"><a title="Home" href="index.html">Home</a></li>
+							<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a title="Services" href="services.html">Services</a></li>
+							<li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134 current_page_parent"><a title="Projects" href="services.html">Projects</a></li>
+							<li id="menu-item-135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a title="About" href="about.html">About</a></li>
+							<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"><a title="Contact" href="contact.html">Contact</a></li>
+
+						</ul>                    
+					</nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu">
+    <button class="menu-close">
+        <i class="material-icons">close</i>
+    </button>
+    <div class="top">
+        <nav>
+            <ul id="menu-primary-menu-1" class="">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-308"><a title="Home" href="index.html">Home</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a title="Services" href="services.html">Services</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-134 current_page_parent"><a title="Projects" href="projects.html">Projects</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a title="About" href="about.html">About</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"><a title="Contact" href="contact.html">Contact</a></li>
+
+			</ul>        
+		</nav>
+    </div>
+
+     <div class="bottom">
+        <div class="menu-contact">
+            <a href="tel:+263776617305">
+                <i class="material-icons">phone</i>
+            </a>
+			<a href="https://wa.me/+263776617305">
+                <i class="fab fa-whatsapp fa-lg" target="_blank"></i>
+            </a>
+            <a href="https://www.facebook.com/willarchalmin">
+                <i class="material-icons">facebook</i>
+            </a>
+        </div>
+        <a class="menu-cta" href="contact.html">Start a project</a>
+    </div>
+
+</div>
+<div class="menu-mask"></div>
+<div class="hero article-hero">
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell">
+                <div class="hero-content">
+                    <h1 class="text-5xl text-white text-uppercase text-bold fade-up">Avondale</h1>
+                    <div class="category-list fade-up">
+                        <button>Residential</button><button>New Build</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article-image bg-white">
+    <div class="grid-container">
+        <div class="grid-x align-center">
+            <div class="cell">
+                <div class="project-gallery-container">
+                    <div class="project-gallery">
+	                    <div class="project-gallery-slide" style="background-image:url('wp-content/uploads/2020/05/project6.jpg');"></div>
+                        <div class="project-gallery-slide" style="background-image:url('wp-content/uploads/2020/05/project6.1.jpg');"></div>
+						<div class="project-gallery-slide" style="background-image:url('wp-content/uploads/2020/05/project6.2.jpg');"></div>
+						<div class="project-gallery-slide" style="background-image:url('wp-content/uploads/2020/05/project6.3.jpg');"></div>
+						<div class="project-gallery-slide" style="background-image:url('wp-content/uploads/2020/05/project6.4.jpg');"></div>
+						<div class="project-gallery-slide" style="background-image:url('wp-content/uploads/2020/05/project6.5.jpg');"></div>
+						<div class="project-gallery-slide" style="background-image:url('wp-content/uploads/2020/05/project6.6.jpg');"></div>
+						<div class="project-gallery-slide" style="background-image:url('wp-content/uploads/2020/05/project6.7.jpg');"></div>
+						<div class="project-gallery-slide" style="background-image:url('wp-content/uploads/2020/05/project6.8.jpg');"></div>
+													                    </div>
+                    	                    <button class="project-gallery-arrow prev">
+	                        <i class="material-icons">arrow_back</i>
+	                    </button>
+	                    <button class="project-gallery-arrow next">
+	                        <i class="material-icons">arrow_forward</i>
+	                    </button>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content bg-white">
+    <div class="grid-container">
+        <div class="grid-x align-center">
+            <div class="cell large-9 xlarge-7">
+                <ul class="project-details">
+	                	                    <li>
+	                        <div class="title">Location</div>
+	                        <div class="value">Avondale</div>
+	                    </li>
+						<li>
+							<div class="title">Completion Date</div>
+							<div class="value">July 2022</div>
+						</li>
+                                    </ul>
+                <div class="rich-text">
+					<p>We take immense pride in the projects we undertake, each one telling a unique story of design, craftsmanship, and transformation. One such remarkable project that stands as a testament to our expertise was a residential new build located in the vibrant neighborhood of Avondale.</p>
+
+					                </div>
+                									            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article-nav bg-white">
+	<a class="previous-article" href="5.html"><i class="material-icons">arrow_back</i><span class="text">Previous Project</span></a><a  class="next-article ml-auto" href="7.html"><span class="text">Next Project</span><i class="material-icons">arrow_forward</i></a></div>
+
+	<div class="contact-cta" style="background-image:url('wp-content/uploads/2019/11/drone_NEW.jpg');">
+		<div class="grid-container">
+			<div class="grid-x">
+				<div class="cell text-center">
+					<div class="inner">
+						<h2 class="text-2xl text-bold text-uppercase text-white fade-up">Ready to discuss your next project?</h2>
+							<a class="btn btn-primary fade-up" href="https://wa.me/+263776617305">
+								<span>Get a quote <i class="fab fa-whatsapp fa-lg" target="_blank"></i></span>
+							</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+	<footer class="site-footer">
+		<div class="grid-container">
+			<div class="grid-x">
+				<div class="cell large-2">
+					<!-- <svg xmlns="http://www.w3.org/2000/svg" width="58.646" height="28" viewBox="0 0 58.646 28" class="logo"><g transform="translate(-0.025 0.001)"><path d="M142.427.5V28.111H137.08V5.847Z" transform="translate(-83.756 -0.306)" fill="#55585d"/><path d="M14.015,22.652A8.653,8.653,0,1,1,20.132,7.874l3.784-3.784A14,14,0,1,0,14.015,28h8.023l-5.347-5.347Z" transform="translate(0)" fill="#55585d"/><path d="M48.388,44.314V36H40.07Z" transform="translate(-24.472 -22.001)" fill="#55585d"/><path d="M75.21,51.877h5.347v-7.14L75.21,39.39Z" transform="translate(-45.947 -24.072)" fill="#55585d"/><path d="M75.21.5,94.732,20.022l-3.78,3.784L75.21,8.064Z" transform="translate(-45.947 -0.306)" fill="#55585d"/></g></svg> -->
+				</div>
+				<div class="cell large-auto show-for-medium">
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+													   
+							<li>
+								<a href="projects.html">Projects</a>
+							</li>
+																										
+							<li>
+								<a href="services.html">Services</a>
+							</li>
+						</ul>
+	
+						<ul>
+														
+							<li>
+								<a href="about.html">About</a>
+							</li>
+														
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+																			
+						</ul>
+	
+						<ul class="secondary">
+														
+							<li>
+								<a href="#">Terms</a>
+							</li>
+																										
+							<li>
+								<a href="#">Privacy</a>
+							</li>
+																		
+						</ul>
+					</nav>
+				</div>
+					<div class="cell medium-shrink text-center">
+						<a class="btn btn-stroke btn-white" href="contact.html">
+							<span>Start a project</span>
+						</a>
+					</div>
+			</div>
+			<div class="grid-x align-middle footer-bottom">
+				<div class="cell show-for-large large-2"></div>
+				<div class="cell medium-auto">
+					<ul class="text-gray-dk text-sm copyright">
+						<li>&copy; 2023 Willarch Aluminium and Glass</li>
+						<li>Design & Build by <a href="" target="_blank">Tristan</a></li>
+					</ul>
+				</div>
+	
+				<div class="cell medium-shrink">
+					<ul class="social">
+						<!-- <li>
+							<a href="https://www.linkedin.com/company/gordon-mitchell-contractors/about/" target="_blank">
+							<i class="fab fa-linkedin"></i>
+							</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Foundation JS -->
+<script src="wp-content/themes/gm_theme/assets/js/foundation/jquery.min.js"></script>
+<script src="https://gmcontractors.co.uk/wp-content/themes/gm_theme/assets/js/foundation/what-input.min.js"></script>
+<script src="wp-content/themes/gm_theme/assets/js/foundation/foundation.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.6/venobox.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vissense/0.10.0/vissense.min.js"></script>-->
+<script src="wp-content/themes/gm_theme/assets/js/inViewPort.js"></script>
+<script src="wp-content/themes/gm_theme/assets/js/app.js@v=1.0.1"></script>
+<script src="wp-content/themes/gm_theme/assets/js/foundation/lottie.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+
+<!-- Mix It Up -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"></script>
+<!--<script>-->
+<!--var containerEl = document.querySelector('.container-mix');-->
+<!--if(containerEl){-->
+<!--    var mixer = mixitup(containerEl);-->
+<!--}-->
+<!--</script>-->
+
+<!-- Mix It Up -->
+<script>
+jQuery(document).ready(function () {
+    jQuery('.dropdown-filter').on('click', function(){
+        console.log(jQuery(this));
+        // var parent = jQuery('.close');
+        // parent.click();
+    });
+
+    const storage = {
+        filters: {},
+        init: function(){
+            this.getStorage();
+        },
+        setFilter: function(page, value = '*') {
+            this.filters[page] = value;
+            this.setStorage();
+        },
+        setStorage: function() {
+            localStorage.setItem('filters', JSON.stringify(this.filters))
+        },
+        getStorage: function () {
+            if(localStorage.getItem('filters')){
+                this.filters =     JSON.parse(localStorage.getItem('filters'))
+            } else {
+                this.filters = {projects: '*'};
+            }
+        }
+    };
+    storage.init();
+
+    var containerEl = document.querySelector('.container-mix');
+    console.log(storage.filters.projects);
+    if(containerEl){
+        var mixer = mixitup('.container-mix', {
+            controls: {
+                toggleLogic: 'or',
+                toggleDefault: 'none'
+            },
+            classNames: {
+                elementFilter: 'filter'
+            },
+            load: {
+                filter: `${storage.filters.projects}`
+            },
+            callbacks: {
+                onMixStart: function(state, futureState) {
+                    storage.setFilter('projects', futureState.activeFilter.selector);
+                }
+            }
+        });
+    }
+
+});
+</script>
+
+<!-- Sticky ScrollTo -->
+<script type="text/javascript">
+if(jQuery('.tabbed-container').length){
+    $(".tabbed-container a[href^='#']").on('click', function(e) {
+        // prevent default anchor click behavior
+        e.preventDefault();
+        // store hash
+        var hash = this.hash;
+        // animate
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top -180
+        }, 1000, function(){
+            // when done, add hash to url
+            // (default click behaviour)
+            //window.location.hash = hash;
+        });
+    });
+    $(document).on("scroll", onScroll);
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+        $('.pagination a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.offset().top - 181 <= scrollPos && refElement.offset().top + refElement.height() >= scrollPos ) {
+                var href = currLink.attr("href");
+                $('.page-link').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+        });
+    }
+
+}
+</script>
+
+<!-- Home ScrollTo -->
+<script type="text/javascript">
+$(".scroll-anchor").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scrollTarget").offset().top - 90
+    }, 1000);
+});
+</script>
+
+<!-- Logo Animation 
+<script>
+var animationData = {"v":"5.5.7","fr":25,"ip":0,"op":28,"w":1000,"h":560,"nm":"FINAL COMP","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"G Curve Outlines 2","td":1,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[248,260,0],"ix":2},"a":{"a":0,"k":[176.5,207.5,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[11.303,0],[0,66.921],[-66.92,0],[-21.742,-20.721],[0,0],[53.986,0],[0,-110.079],[-110.079,0],[-34.244,1.17]],"o":[[-13.62,0.7],[-66.92,0],[0,-66.921],[32.406,0],[0,0],[-35.892,-34.858],[-110.079,0],[0,110.079],[32.929,0],[0,0]],"v":[[67.271,121.874],[30.238,121.78],[-90.932,0.61],[30.238,-120.561],[113.819,-87.118],[169.078,-142.376],[30.238,-198.707],[-169.078,0.61],[29.359,198.415],[141.457,197.537]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[178.737,210.755],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Group 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":-3,"op":28,"st":-67,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"Shape Layer 6","tt":1,"sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":-99,"ix":10},"p":{"a":0,"k":[283.148,263.125,0],"ix":2},"a":{"a":0,"k":[-216.852,-16.875,0],"ix":1},"s":{"a":0,"k":[-100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[449.766,449.766],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"tm","s":{"a":1,"k":[{"i":{"x":[0.539],"y":[1]},"o":{"x":[0.167],"y":[0.167]},"t":0,"s":[98]},{"t":19,"s":[18]}],"ix":1},"e":{"a":0,"k":100,"ix":2},"o":{"a":0,"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":232,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"tr","p":{"a":0,"k":[-216.852,-17.109],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[81.481,81.481],"ix":3},"r":{"a":0,"k":-222.413,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Ellipse 1","np":4,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":28,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"Shape Layer 4","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0.167},"t":-36,"s":[360.5,700.5,0],"to":[0,-63.333,0],"ti":[0,63.333,0]},{"t":-20,"s":[360.5,320.5,0]}],"ix":2},"a":{"a":0,"k":[-139.5,40.5,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"hasMask":true,"masksProperties":[{"inv":false,"mode":"a","pt":{"a":1,"k":[{"i":{"x":0.521,"y":1},"o":{"x":0.167,"y":0.039},"t":1,"s":[{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[-86,105],[-84,104],[-12,48],[-13,50]],"c":true}]},{"t":18,"s":[{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[-199,-16],[-80,106],[-18,52],[-126,-71]],"c":true}]}],"ix":1},"o":{"a":0,"k":100,"ix":3},"x":{"a":0,"k":0,"ix":4},"nm":"Mask 1"}],"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0]],"v":[[-84,-15],[-195,-15],[-84,96]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":0,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Shape 1","np":3,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":-3,"op":28,"st":-67,"bm":0},{"ddd":0,"ind":4,"ty":4,"nm":"Shape Layer 3","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0.167},"t":-34,"s":[533,-136.5,0],"to":[0,87.667,0],"ti":[0,-87.667,0]},{"t":-20,"s":[533,389.5,0]}],"ix":2},"a":{"a":0,"k":[33,109.5,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"hasMask":true,"masksProperties":[{"inv":false,"mode":"a","pt":{"a":1,"k":[{"i":{"x":0.537,"y":1},"o":{"x":0.167,"y":0.027},"t":1,"s":[{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[-5,200],[-5,184],[67,184],[67,200]],"c":true}]},{"t":19,"s":[{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[-5,6],[-5,184],[67,184],[67,6]],"c":true}]}],"ix":1},"o":{"a":0,"k":100,"ix":3},"x":{"a":0,"k":0,"ix":4},"nm":"Mask 1"}],"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[-5,7],[-4,184],[67,184],[67,80]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":0,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Shape 1","np":3,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":-3,"op":28,"st":-67,"bm":0},{"ddd":0,"ind":5,"ty":4,"nm":"Shape Layer 2","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0.167},"t":-30,"s":[1167.5,781.5,0],"to":[-91.333,-90.667,0],"ti":[91.333,90.667,0]},{"t":-20,"s":[619.5,237.5,0]}],"ix":2},"a":{"a":0,"k":[119.5,-42.5,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"hasMask":true,"masksProperties":[{"inv":false,"mode":"a","pt":{"a":1,"k":[{"i":{"x":0.502,"y":1},"o":{"x":0.167,"y":0},"t":0,"s":[{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[278,62],[221,123],[217,123],[280,60]],"c":true}]},{"t":19,"s":[{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[-4,-215],[-55,-149],[217,123],[280,60]],"c":true}]}],"ix":1},"o":{"a":0,"k":100,"ix":3},"x":{"a":0,"k":0,"ix":4},"nm":"Mask 1"}],"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[-4,-215],[-4,-106],[220,118],[275,63]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":0,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Shape 1","np":3,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":-3,"op":28,"st":-67,"bm":0},{"ddd":0,"ind":6,"ty":4,"nm":"Shape Layer 1","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0.167},"t":-32,"s":[876.5,-215.5,0],"to":[0,80,0],"ti":[0,-80,0]},{"t":-20,"s":[876.5,264.5,0]}],"ix":2},"a":{"a":0,"k":[376.5,-15.5,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"hasMask":true,"masksProperties":[{"inv":false,"mode":"a","pt":{"a":1,"k":[{"i":{"x":0.529,"y":1},"o":{"x":0.167,"y":0.018},"t":0,"s":[{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[340,191],[340,184],[413,184],[413,191]],"c":true}]},{"t":18,"s":[{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[340,-215],[340,184],[413,184],[413,-215]],"c":true}]}],"ix":1},"o":{"a":0,"k":100,"ix":3},"x":{"a":0,"k":0,"ix":4},"nm":"Mask 1"}],"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,0],[0,0],[0,0],[0,0]],"o":[[0,0],[0,0],[0,0],[0,0]],"v":[[413,-215],[340,-142],[340,184],[413,183]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"st","c":{"a":0,"k":[1,1,1,1],"ix":3},"o":{"a":0,"k":100,"ix":4},"w":{"a":0,"k":0,"ix":5},"lc":1,"lj":1,"ml":4,"bm":0,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[0,0],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Shape 1","np":3,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":-3,"op":28,"st":-67,"bm":0}],"markers":[{"tm":-21,"cm":"2","dr":0},{"tm":-5,"cm":"3","dr":0},{"tm":0,"cm":"5","dr":0},{"tm":13,"cm":"1","dr":0},{"tm":19,"cm":"4","dr":0}]};
+var params = {
+    container: document.getElementById('lottie'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    animationData: animationData
+};
+var anim;
+anim = lottie.loadAnimation(params);
+</script>
+-->
+
+<script>
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('lottie'),
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: 'https://gmcontractors.co.uk/wp-content/themes/gm_theme/includes/logo.json'
+})
+setTimeout(function(){ animation.play(); }, 1000);
+</script>
+
+</body>
+    
+</html>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/gmcontractors.co.uk\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js@ver=5.1.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ctcc_vars = {"expiry":"30","method":"1","version":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/uk-cookie-consent/assets/js/uk-cookie-consent-js.js@ver=2.3.0'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LfT-8MUAAAAAKYcRQJMZbvc6VoxfUQjO0_k4v-B&#038;ver=3.0'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min.js@ver=5.3.9'></script>
+<script type="text/javascript">
+( function( grecaptcha, sitekey, actions ) {
+
+	var wpcf7recaptcha = {
+
+		execute: function( action ) {
+			grecaptcha.execute(
+				sitekey,
+				{ action: action }
+			).then( function( token ) {
+				var forms = document.getElementsByTagName( 'form' );
+
+				for ( var i = 0; i < forms.length; i++ ) {
+					var fields = forms[ i ].getElementsByTagName( 'input' );
+
+					for ( var j = 0; j < fields.length; j++ ) {
+						var field = fields[ j ];
+
+						if ( 'g-recaptcha-response' === field.getAttribute( 'name' ) ) {
+							field.setAttribute( 'value', token );
+							break;
+						}
+					}
+				}
+			} );
+		},
+
+		executeOnHomepage: function() {
+			wpcf7recaptcha.execute( actions[ 'homepage' ] );
+		},
+
+		executeOnContactform: function() {
+			wpcf7recaptcha.execute( actions[ 'contactform' ] );
+		},
+
+	};
+
+	grecaptcha.ready(
+		wpcf7recaptcha.executeOnHomepage
+	);
+
+	document.addEventListener( 'change',
+		wpcf7recaptcha.executeOnContactform, false
+	);
+
+	document.addEventListener( 'wpcf7submit',
+		wpcf7recaptcha.executeOnHomepage, false
+	);
+
+} )(
+	grecaptcha,
+	'6LfT-8MUAAAAAKYcRQJMZbvc6VoxfUQjO0_k4v-B',
+	{"homepage":"homepage","contactform":"contactform"}
+);
+</script>
+			
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
+												if(!catapultReadCookie("catAccCookies")){ // If the cookie has not been set then show the bar
+							$("html").addClass("has-cookie-bar");
+							$("html").addClass("cookie-bar-bottom-bar");
+							$("html").addClass("cookie-bar-bar");
+													}
+																	});
+				</script>
+			
+		
