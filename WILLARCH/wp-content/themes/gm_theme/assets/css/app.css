@@ -6118,7 +6118,7 @@ button,a{
     -ms-flex-direction:column;
     flex-direction:column;
     width:100%;
-    max-width:25rem;
+    max-width:30rem;
     background:#1B1E25;
     -webkit-transform:translateX(100%);
     -ms-transform:translateX(100%);
